@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #AB84DD;
+    --primary-color-light: #ab84dd5b;
+    --white: #fff;
+}
+.main-container{ 
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 33vh;
+  margin-left: 20vw;
+  line-height: 0;
+}
+
+.hero-padding{
+    padding-block: 2.5rem;
+}
+
+.small_heading {
+  font-size: 5rem;
+}
+
+.big_heading {
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.name-color {
+    color: var(--primary-color)
+}
+
+.resume-btn {
+    width: 12rem;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    border-radius: 3rem;
+    color: var(--white);
+    background-color: var(--white);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+        background-color: var(--primary-color);
+        box-shadow: 0px 15px 20px var(--primary-color-light);
+        color: #fff;
+        transform: translateY(-7px);
+}
+
+.focus-in-expand-fwd {
+	-webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+ @-webkit-keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-800px);
+              transform: translateZ(-800px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-800px);
+              transform: translateZ(-800px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  
+  
+  

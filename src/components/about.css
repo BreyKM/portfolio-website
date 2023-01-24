@@ -1,0 +1,9 @@
+.text-color{
+    color: var(--white);
+}
+
+
+
+.main-container {
+    height: 100vh;
+}
