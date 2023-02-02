@@ -1,38 +1,83 @@
 :root {
   --logo-color: #AB84DD;
+  --primary-color-bg: black;
+  --nav-scroll-color: #0b0013;
 }
 
 .logo {
   width: 5rem;
   height: 5rem;
+  cursor: pointer;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 6rem;
-  padding-block: 1rem;
+  padding-inline: 6rem;
   font-size: 2rem;
+}
+
+.scroll {
+  background-color: var(--nav-scroll-color);
+}
+
+.scroll-links {
+  color: var(--logo-color);
+  display: flex;
+}
+
+.scroll-links a {
+  list-style-type: none;
+  padding-inline: 2rem;
+  
+   cursor: pointer;
 }
 
 .nav-links {
   display: flex;
-}
-
-.nav-links li {
-  list-style-type: none;
-  padding-inline: 2rem;
-  
+  color: var(--logo-color); 
 }
 
 .nav-links a {
-   color: var(--logo-color); 
+  list-style-type: none;
+  padding-inline: 2rem;
+  
    cursor: pointer;
 }
 
-nav.sticky {
+.sticky {
     position: sticky;
     top: 0;
     z-index: 100;
 }
+
+div.brackets a:not(.active):before, div.brackets a:not(.active):after
+{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+div.brackets a:before
+{
+    content: '{ ';
+}
+
+div.brackets a:after
+{
+  content: ' }';
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+}
+
+.active {
+  color: white;
+}
+
+
+
+
+

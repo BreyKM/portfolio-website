@@ -1,12 +1,12 @@
 :root {
     --primary-color: #AB84DD;
     --primary-color-light: #ab84dd5b;
+    --primary-color-dark: #733eb8;
     --white: #fff;
 }
-.main-container{ 
+#hero{ 
       height: 100vh;
-      display: flex;
-      flex-direction: column;
+   
       
 }
 .hero-container {
@@ -15,34 +15,35 @@
   color: white;
   padding-top: 33vh;
   margin-left: 20vw;
-  line-height: 0;
+  
 }
 
 .hero-padding{
-    padding-block: 2.5rem;
+    padding-bottom: 1.5rem;
+    
 }
 
 .small_heading {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .big_heading {
-  font-size: 3rem;
+  font-size: 5rem;
   white-space: nowrap;
 }
 
 .name-color {
-    color: var(--primary-color)
-}
+    color: var(--primary-color);
+    
+}      
 
 .resume-btn {
     width: 12rem;
     padding: 1rem 1rem;
     font-size: 2rem;
     border-radius: 3rem;
-    color: var(--white);
     background-color: var(--white);
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
     cursor: pointer;
 }
 

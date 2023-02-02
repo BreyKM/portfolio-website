@@ -1,9 +1,38 @@
-.text-color{
-    color: var(--white);
+:root {
+  --white: #fff;
+  --primary-color: #ab84dd;
 }
 
-
+.text-color {
+  color: var(--white);
+}
 
 .main-container {
-    height: 100vh;
+  height: 100vh;
 }
+
+.about-container {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 4rem;
+  text-decoration: underline 4px solid var(--primary-color);
+  text-underline-offset: 1rem;
+}
+
+.info {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.avatar-container {
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+
