@@ -4,7 +4,7 @@ import Avatar from "./images/avatar.png";
 
 function About() {
   return (
-    <div className="main-container" id="about">
+    <div className="about-main-container" id="about">
       <p className="about-heading text-color">About me</p>
       <div className="about-container">
         <p className="info text-color">
