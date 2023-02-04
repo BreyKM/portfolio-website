@@ -1,5 +1,5 @@
 import React from "react";
-import "./skills.css"
+import "./Skills.css"
 import hcj from "./images/HTML_CSS_JS.png";
 import rxt from "./images/React-icon.svg.png";
 import nodejs from "./images/1200px-Node.js_logo.svg.png";
