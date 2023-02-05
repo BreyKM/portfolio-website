@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { useInView } from "react-intersection-observer";
 
 function Contact() {
   const form = useRef();
@@ -26,10 +27,16 @@ function Contact() {
       );
   };
 
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: "100px",
+    
+  });
+
   return (
     <div className="contact-container" id="contact">
       <div className="contact-form-header">Lets chat!</div>
-      <div className="contact-img-container">
+<div className={`contact-view ${inView ? "showcontact" : "hidecontact"}`} ref={ref}>
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <label title="required">Name</label>
           <input type="text" name="user_name" placeholder="Your name" />

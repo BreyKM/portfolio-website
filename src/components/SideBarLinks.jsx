@@ -1,12 +1,17 @@
 import React from "react";
 import "./SideBarLinks.css";
+import { useInView } from "react-intersection-observer";
 
 function SidebarLinks() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <div className="left-sidebar-links">
-      <div className="left-sidebar-links">
-        <ul className="left-links">
-          <a href="https://github.com/BreyKM" target="_blank" rel="noreferrer">
+    <div >
+      <div className={`left-sidebar-links ${inView ? "showside" : "hideside"}`} ref={ref}>
+        <ul className="left-links" >
+          <a  href="https://github.com/BreyKM" target="_blank" rel="noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               role="img"

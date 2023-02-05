@@ -1,11 +1,26 @@
-.left-links {
+.hideside {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .showside {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1.5s;
+  }
+
+  .left-sidebar-links {
     position: fixed;
-    display: flex;
-    flex-direction: column;
     bottom: 0;
     right: 100px;
-    left: auto;
     z-index: 2;
+    transition-delay: 1600ms;
+  }
+
+.left-links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .left-links a {

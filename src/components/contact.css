@@ -6,6 +6,17 @@
     align-items: center;
 }
 
+.hidecontact {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+  .showcontact {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s;
+  }
+
 .contact-img-container {
     display: flex;
     flex-direction: row;

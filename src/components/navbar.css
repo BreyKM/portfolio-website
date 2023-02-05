@@ -4,6 +4,29 @@
   --nav-scroll-color: #0b0013;
 }
 
+.hidenav {
+  opacity: 0;
+    transform: translateY(-80%);
+}
+
+.shownav {
+  opacity: 1;
+    transform: translateY(0);
+    transition: all 1.5s;
+}
+
+.nav-link:nth-child(2) {
+  transition-delay: 150ms;
+}
+
+.nav-link:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+.nav-link:nth-child(4) {
+  transition-delay: 450ms;
+}
+
 .logo {
   width: 5rem;
   height: 5rem;
@@ -34,6 +57,7 @@
    cursor: pointer;
 }
 
+
 .sticky {
     position: sticky;
     top: 0;
@@ -43,7 +67,7 @@
 div.brackets a:not(.active):before, div.brackets a:not(.active):after
 {
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 1s !important;
 }
 
 div.brackets a:before

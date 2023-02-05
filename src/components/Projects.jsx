@@ -2,13 +2,18 @@ import React from "react";
 import "./Projects.css";
 import EAS from "./images/Etch-A-Sketch2.png";
 import HBO from "./images/HBOMAX-clone.jpg";
-
+import { useInView } from "react-intersection-observer";
 
 function Projects() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: "-50px",
+  });
+
   return (
     <div class="project-container" id="projects">
       <div className="project-header">Projects</div>
-      <div class="project">
+      <div class={`project ${inView ? "showproject" : "hideproject"}`} ref={ref}>
         <div class="project-content">
           <a href="https://breykm.github.io/Etch-A-Sketch/" target="_blank" rel="noreferrer"><h4 class="project-title">Etch-A-Sketch</h4></a>
           <div className="project-details-container">
@@ -78,7 +83,7 @@ function Projects() {
           </a>
         </div>
       </div>
-      <div class="project">
+      <div class={`project ${inView ? "showproject2" : "hideproject2"}`} ref={ref}>
         <div class="project-content2">
           <h4 class="project-title2"><a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank" rel="noreferrer">HBO MAX clone</a></h4>
           <div className="project-details-container2">

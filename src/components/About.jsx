@@ -1,10 +1,16 @@
 import React from "react";
 import "./About.css";
 import Avatar from "./images/avatar.png";
+import { useInView } from "react-intersection-observer";
 
 function About() {
+  const { ref, inView } = useInView({
+        triggerOnce: true,
+        rootMargin: "-50px",
+      });
+
   return (
-    <div className="about-main-container" id="about">
+    <div className={`about-main-container ${inView ? "showabout" : "hideabout"}`} ref={ref} id="about">
       <p className="about-heading text-color">About me</p>
       <div className="about-container">
         <p className="info text-color">

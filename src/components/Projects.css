@@ -2,6 +2,28 @@
   color: #aaa;
 }
 
+.hideproject {
+  opacity: 0;
+  transform: translateX(10%);
+}
+
+.showproject {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.hideproject2 {
+  opacity: 0;
+  transform: translateX(-10%);
+}
+
+.showproject2 {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
 .project-container {
   max-width: 1000px;
   margin: 24rem auto;
