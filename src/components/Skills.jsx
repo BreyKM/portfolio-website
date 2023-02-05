@@ -1,17 +1,22 @@
 import React from "react";
-import "./Skills.css"
+import "./Skills.css";
 import hcj from "./images/HTML_CSS_JS.png";
 import rxt from "./images/React-icon.svg.png";
 import nodejs from "./images/1200px-Node.js_logo.svg.png";
 import python from "./images/python-logo.png";
+import { useInView } from "react-intersection-observer";
 
-function skills() {
+function Skills() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+  });
+
   return (
     <div className="main-skills-container" id="skills">
       <div className="skills-container">
         <p className="skills-heading text-color">Skills</p>
         <div id="cards">
-          <div className="card">
+          <div className={`card ${inView ? "show" : "hidden"}`} ref={ref}>
             <div className="card-content">
               <div className="card-image">
                 <img src={hcj} alt="html css and javascript logos" />
@@ -23,7 +28,7 @@ function skills() {
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className={`card ${inView ? "show" : "hidden"}`} ref={ref}>
             <div className="card-content">
               <div className="card-image">
                 <img src={rxt} alt="" />
@@ -35,7 +40,7 @@ function skills() {
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className={`card ${inView ? "show" : "hidden"}`} ref={ref}>
             <div className="card-content">
               <div className="card-image">
                 <img src={python} alt="" />
@@ -47,7 +52,7 @@ function skills() {
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className={`card ${inView ? "show" : "hidden"}`} ref={ref}>
             <div className="card-content">
               <div className="card-image">
                 <img src={nodejs} alt="" />
@@ -65,4 +70,4 @@ function skills() {
   );
 }
 
-export default skills;
+export default Skills;

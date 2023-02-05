@@ -25,15 +25,15 @@ function NavBar() {
     
 
     return (
-        <nav className={`${sticky ? 'sticky nav': "nav"} ${scrollColor ? 'nav scroll': "nav"} ` }>
+        <nav className={`sticky ${sticky ? 'sticky nav': "nav"} ${scrollColor ? 'nav scroll': "nav"} ` }>
             <div className="logo">
                 <a href="../../public/index.html" title="Home"><Logo className="logo-svg" /></a>
             </div>
-            <div className={`${scrollColor ? ' brackets scroll-links': "brackets nav-links "} `}>
-                <div className="nav-name"><Link title="About" to="about" spy={true} smooth={true} offset={-150} duration={300}>About</Link></div> 
-                <Link title="Skills" to="skills" spy={true} smooth={true} offset={-150} duration={300}>Skills</Link>   
-                <Link title="Projects" to="projects" spy={true} smooth={true} offset={-150} duration={300}>Projects</Link> 
-                <Link title="Contact" to="contact" spy={true} smooth={true} offset={-100} duration={300}>Contact</Link>  
+            <div className="brackets nav-links">
+                <div className="nav-name"><Link title="About" to="about" spy={true} smooth={true} offset={-250} duration={300}>About</Link></div> 
+                <Link title="Skills" to="skills" spy={true} smooth={true} offset={-200} duration={300}>Skills</Link>   
+                <Link title="Projects" to="projects" spy={true} smooth={true} offset={-200} duration={300}>Projects</Link> 
+                <Link title="Contact" to="contact" spy={true} smooth={true} offset={-200} duration={300}>Contact</Link>  
             </div>
         </nav>
         

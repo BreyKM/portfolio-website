@@ -6,7 +6,7 @@
       <stop style="stop-color: rgb(212, 179, 255);" offset="0"/>
       <stop style="stop-color: rgb(117, 19, 245);" offset="1"/>
     </linearGradient>
-    <path id="text-path-0" d="M 60.65 179.143 C 124.775 134.476 155.448 137.291 196.573 181.957"/>
+    <path id="text-path-0" d="M 70.65 179.143 C 124.775 134.476 155.448 137.291 196.573 181.957"/>
     <style bxFonts="Nunito">@import url(https://fonts.googleapis.com/css2?family=Nunito%3Aital%2Cwght%400%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&amp;display=swap);</style>
   </defs>
   <text dx="0" dy="0" font-family="&quot;Concert One&quot;" font-size="15" font-weight="400" transform="matrix(10.688057, 0, 0, 10.688054, 100.092934, 206.246796)" stroke-width="0" style="white-space: pre;"><tspan y="0" font-weight="400" stroke-width="0"/></text>

@@ -3,6 +3,11 @@
     --primary-color: #ab84dd;
   }
 
+  .skills-container {
+    position: relative;
+    z-index: 2;
+  }
+
   .skills-heading {
     font-size: 4rem;
     padding-block: 5rem;
@@ -50,4 +55,29 @@
     display: flex;
     height: 25rem;
     overflow: hidden;
+  }
+
+  .hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1.5s;
+  }
+
+  .card:nth-child(2) {
+    transition-delay: 100ms;
+  }
+
+  .card:nth-child(3) {
+    transition-delay: 200ms;
+  }
+
+  .card:nth-child(4) {
+    transition-delay: 300ms;
   }

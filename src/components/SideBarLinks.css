@@ -1,0 +1,32 @@
+.left-links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    right: 100px;
+    left: auto;
+    z-index: 2;
+}
+
+.left-links a {
+    margin-block: 0.5rem;
+}
+
+.left-links svg:hover {
+    stroke: var(--primary-color);
+    transform: translate(0, -0.5rem);
+}
+.left-links::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+.left-links svg {
+    width: 36px;
+    height: 36px;
+    transition: all 0.2s ease-in-out
+}

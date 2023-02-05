@@ -16,33 +16,21 @@
   align-items: center;
   padding-inline: 6rem;
   font-size: 2rem;
+  z-index: 100;
 }
 
 .scroll {
   background-color: var(--nav-scroll-color);
 }
 
-.scroll-links {
-  color: var(--logo-color);
-  display: flex;
-}
-
-.scroll-links a {
-  list-style-type: none;
-  padding-inline: 2rem;
-  
-   cursor: pointer;
-}
-
 .nav-links {
   display: flex;
-  color: var(--logo-color); 
+  color: var(--white); 
 }
 
 .nav-links a {
   list-style-type: none;
   padding-inline: 2rem;
-  
    cursor: pointer;
 }
 
@@ -74,7 +62,7 @@ div.brackets a:hover:before, div.brackets a:hover:after
 }
 
 .active {
-  color: white;
+  color: var(--logo-color);
 }
 
 

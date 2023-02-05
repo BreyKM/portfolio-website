@@ -2,8 +2,7 @@ import React from "react";
 import "./Projects.css";
 import EAS from "./images/Etch-A-Sketch2.png";
 import HBO from "./images/HBOMAX-clone.jpg";
-import GH from "./images/icons8-github-30.png";
-import EXTL from "./images/icons8-external-link-30.png";
+
 
 function Projects() {
   return (
@@ -11,7 +10,7 @@ function Projects() {
       <div className="project-header">Projects</div>
       <div class="project">
         <div class="project-content">
-          <a href="https://breykm.github.io/Etch-A-Sketch/" target="_blank"><h4 class="project-title">Etch-A-Sketch</h4></a>
+          <a href="https://breykm.github.io/Etch-A-Sketch/" target="_blank" rel="noreferrer"><h4 class="project-title">Etch-A-Sketch</h4></a>
           <div className="project-details-container">
           <div class="project-description">
             <p>
@@ -29,7 +28,7 @@ function Projects() {
             </div>
             <div className="project-links-svg">
             <ul>
-              <a href="https://github.com/BreyKM/Etch-A-Sketch" target="_blank">
+              <a href="https://github.com/BreyKM/Etch-A-Sketch" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
@@ -45,7 +44,7 @@ function Projects() {
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
               </a>
-              <a href="https://breykm.github.io/Etch-A-Sketch/" target="_blank">
+              <a href="https://breykm.github.io/Etch-A-Sketch/" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
@@ -72,7 +71,7 @@ function Projects() {
         <div class="project-img">
           <a
             href="https://breykm.github.io/Etch-A-Sketch/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             className="live-site"
           >
             <img src={EAS} alt="" />
@@ -81,7 +80,7 @@ function Projects() {
       </div>
       <div class="project">
         <div class="project-content2">
-          <h4 class="project-title2"><a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank">HBO MAX clone</a></h4>
+          <h4 class="project-title2"><a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank" rel="noreferrer">HBO MAX clone</a></h4>
           <div className="project-details-container2">
           <div class="project-description2">
             <p>
@@ -99,7 +98,7 @@ function Projects() {
             </div>
             <div className="project-links-svg2">
             <ul className="project-links-right">
-              <a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank">
+              <a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
@@ -115,7 +114,7 @@ function Projects() {
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
               </a>
-              <a href="https://breykm.github.io/HBOMAX-clone/" target="_blank">
+              <a href="https://breykm.github.io/HBOMAX-clone/" target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
@@ -141,7 +140,7 @@ function Projects() {
         <div class="project-img2">
           <a
             href="https://breykm.github.io/HBOMAX-clone/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             className="live-site"
           >
             <img src={HBO} alt="" />
