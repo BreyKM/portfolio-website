@@ -40,10 +40,13 @@
   padding-inline: 6rem;
   font-size: 2rem;
   z-index: 100;
+  width: 100vw;
 }
 
 .scroll {
   background-color: var(--nav-scroll-color);
+  width: 100vw
+  
 }
 
 .nav-links {
@@ -89,6 +92,27 @@ div.brackets a:hover:before, div.brackets a:hover:after
   color: var(--logo-color);
 }
 
+@media (max-width: 1200px) and (orientation: landscape) {
+  .nav {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) and (orientation: portrait) {
+  .logo {
+    width: 4rem
+  }
+  .nav {
+    font-size: 1.25rem;
+    padding-inline: 1rem
+  }
+
+  .nav-links a {
+    padding-inline: 1.5rem
+  }
+
+  
+}
 
 
 
