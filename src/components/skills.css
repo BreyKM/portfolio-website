@@ -85,3 +85,37 @@
   .card:nth-child(4) {
     transition-delay: 300ms;
   }
+
+  @media (max-width: 1200px) and (orientation: portrait) {
+    .card:nth-child(2) {
+      transition-delay: 00ms;
+    }
+  
+    .card:nth-child(3) {
+      transition-delay: 200ms;
+    }
+  
+    .card:nth-child(4) {
+      transition-delay: 200ms;
+    }
+  }
+
+  @media (max-width: 1200px) and (orientation: landscape) {
+    .card:nth-child(2) {
+      transition-delay: 100ms;
+    }
+  
+    .card:nth-child(3) {
+      transition-delay: 200ms;
+    }
+  
+    .card:nth-child(4) {
+      transition-delay: 100ms;
+    }
+  }
+
+  @media (max-width: 1600px) and (orientation: landscape) {
+    .skills-container {
+      margin-top: 10rem
+    }
+  }

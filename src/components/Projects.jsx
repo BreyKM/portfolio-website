@@ -83,7 +83,7 @@ function Projects() {
           </a>
         </div>
       </div>
-      <div class={`project ${inView ? "showproject2" : "hideproject2"}`} ref={ref}>
+      <div class={`project2 ${inView ? "showproject2" : "hideproject2"}`} ref={ref}>
         <div class="project-content2">
           <h4 class="project-title2"><a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank" rel="noreferrer">HBO MAX clone</a></h4>
           <div className="project-details-container2">

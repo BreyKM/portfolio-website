@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Navbar.css";
+import "./navbar.css";
 import { ReactComponent as Logo } from "./images/portfolio-logov4.svg";
 import { Link } from "react-scroll";
 import { useInView } from "react-intersection-observer";
@@ -30,8 +30,8 @@ function NavBar() {
 
   return (
     <nav
-      className={`sticky ${sticky ? "sticky nav" : "nav"} ${
-        scrollColor ? "nav scroll" : "nav"
+      className={` ${sticky ? "sticky nav" : "nav"} ${
+        scrollColor ? "scroll" : ""
       }`}
       ref={ref}
     >
@@ -47,7 +47,7 @@ function NavBar() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-250}
+            offset={-150}
             duration={600}
           >
             About
@@ -59,7 +59,7 @@ function NavBar() {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={-75}
             duration={600}
           >
             Skills

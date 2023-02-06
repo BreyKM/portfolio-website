@@ -19,6 +19,7 @@
   transition: all 1.5s;
 }
 
+
 .heroView:nth-child(1) {
   transition-delay: 800ms;
 }
@@ -86,4 +87,8 @@ span {
 .bounce-in-right {
   -webkit-animation: bounce-in-right 1.5s both;
   animation: bounce-in-right 1.5s both;
+}
+
+@media (max-width: 1200px) {
+  
 }

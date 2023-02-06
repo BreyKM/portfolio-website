@@ -19,7 +19,6 @@
 }
 
 .about-main-container {
-  position: relative;
   height: 90vh;
 }
 
@@ -45,6 +44,38 @@
 .avatar-container {
   padding-left: 9rem;
   padding-top: 3rem;
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+  .about-container {
+    width: 80vw;
+    margin-top: 1.5rem;
+  }
+  
+  .info {
+    font-size: 1.5rem
+  }
+}
+
+@media (max-width: 1600px) and (orientation: landscape) {
+  .about-heading {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 1200px) and (orientation: portrait) {
+  .about-container {
+    width: 90vw;
+    margin-top: 1.5rem;
+  }
+
+  .info {
+    font-size: 1.3rem
+  }
+
+  .avatar-container {
+    padding-left: 0;
+  }
 }
 
 
