@@ -1,7 +1,3 @@
-:root {
-  color: #aaa;
-}
-
 .hideproject {
   opacity: 0;
   transform: translateX(10%);
@@ -26,8 +22,8 @@
 
 .project-container {
   max-width: 1024px;
-  margin: 24rem auto;
-  height: 100vh;
+  margin:24rem auto;
+  min-height: 100vh;
 }
 
 .project-header {
@@ -52,6 +48,7 @@
 }
 
 .project2 {
+  margin: 30px;
   display: flex;
   flex-direction: row-reverse;
   margin-block: 6rem;
@@ -152,7 +149,7 @@
 
 .project-tools2 ul {
   display: flex;
-  margin-top: 20px;
+  margin-top: 1rem;
   max-width: fit-content;
 }
 
@@ -163,7 +160,7 @@
 }
 
 .project-tools2 li {
-  margin-right: 20px;
+ margin-left: 20px;
   color: #aaa;
   list-style: none;
   align-self: flex-end;
@@ -174,17 +171,14 @@
   height: 24px;
   margin-right: 20px;
   margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
+  
 }
 
 .project-links-svg2 svg {
   width: 24px;
   height: 24px;
-  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
 }
 
 
@@ -239,7 +233,6 @@
 
 .project-img2 img {
   position: relative;
-  transform: scale(1.1);
   max-width: 100%;
   vertical-align: middle;
   mix-blend-mode: multiply;

@@ -59,7 +59,7 @@
 
 @media (max-width: 1600px) and (orientation: landscape) {
   .about-heading {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -78,4 +78,27 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .info {
+    font-size: 1.1rem
+  }
 
+  .avatar-container {
+    padding-left: 0;
+  }
+
+  .about-container {
+    width: 90vw;
+  }
+
+  .about-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    font-size: 1rem;
+    line-height:2.75rem;
+  }
+}

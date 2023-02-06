@@ -1,5 +1,5 @@
 import React from "react";
-import './Hero.css'
+import './hero.css'
 import { useInView } from "react-intersection-observer";
 
 function Hero() {

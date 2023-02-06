@@ -30,21 +30,23 @@ function Contact() {
   const { ref, inView } = useInView({
     triggerOnce: true,
     rootMargin: "100px",
-    
   });
 
   return (
     <div className="contact-container" id="contact">
       <div className="contact-form-header">Lets chat!</div>
-<div className={`contact-view ${inView ? "showcontact" : "hidecontact"}`} ref={ref}>
+      <div
+        className={`contact-view ${inView ? "showcontact" : "hidecontact"}`}
+        ref={ref}
+      >
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
-          <label title="required">Name</label>
+          <label htmlFor="user_name" title="required">Name</label>
           <input type="text" name="user_name" placeholder="Your name" />
-          <label title="required">Email</label>
+          <label  htmlFor="user_email" title="required">Email</label>
           <input type="email" name="user_email" placeholder="your email" />
-          <label>Subject</label>
+          <label  htmlFor="user_subject">Subject</label>
           <input type="text" name="user_subject" placeholder="optional" />
-          <label title="required">Message</label>
+          <label htmlFor="message" title="required">Message</label>
           <textarea
             name="message"
             rows={8}

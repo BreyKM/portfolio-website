@@ -46,9 +46,15 @@
     transition: all 0.2s ease-in-out
 }
 
+@media (max-width: 1600px) and (orientation: landscape) {
+  .left-sidebar-links {
+    right: 45px;
+  }
+}
+
 @media (max-width: 1200px) and (orientation: landscape) {
   .left-sidebar-links {
-    right: 50px
+    right: 40px
   }
 }
 

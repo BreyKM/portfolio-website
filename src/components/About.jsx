@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./about.css";
 import Avatar from "./images/avatar.png";
 import { useInView } from "react-intersection-observer";
 
@@ -10,9 +10,9 @@ function About() {
       });
 
   return (
-    <div className={`about-main-container ${inView ? "showabout" : "hideabout"}`} ref={ref} id="about">
-      <p className="about-heading text-color">About me</p>
-      <div className="about-container">
+    <div className="about-main-container" id="about">
+      <p className={`about-heading text-color ${inView ? "showabout" : "hideabout"}`} ref={ref}>About me</p>
+      <div className={`about-container ${inView ? "showabout" : "hideabout"}`} ref={ref}>
         <p className="info text-color">
           I am a computer science student with a passion for problem-solving and
           learning about the latest technologies. I have experience in

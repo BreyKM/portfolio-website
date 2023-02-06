@@ -37,7 +37,7 @@ function NavBar() {
     >
       <div className={`logo ${inView ? "shownav" : "hidenav"}`}>
         <a href="../../public/index.html" title="Home">
-          <Logo className="logo-svg" />
+          <Logo className="logo-svg" aria-label="Logo"/>
         </a>
       </div>
       <div className="brackets nav-links">
@@ -45,6 +45,7 @@ function NavBar() {
           <Link
             title="About"
             to="about"
+            tabIndex={0}
             spy={true}
             smooth={true}
             offset={-150}
@@ -57,9 +58,10 @@ function NavBar() {
           <Link
             title="Skills"
             to="skills"
+            tabIndex={0}
             spy={true}
             smooth={true}
-            offset={-75}
+            offset={-65}
             duration={600}
           >
             Skills
@@ -69,9 +71,10 @@ function NavBar() {
           <Link
             title="Projects"
             to="projects"
+            tabIndex={0}
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={-100}
             duration={600}
           >
             Projects
@@ -81,6 +84,7 @@ function NavBar() {
           <Link
             title="Contact"
             to="contact"
+            tabIndex={0}
             spy={true}
             smooth={true}
             offset={-100}

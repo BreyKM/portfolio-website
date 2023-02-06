@@ -110,8 +110,18 @@ div.brackets a:hover:before, div.brackets a:hover:after
   .nav-links a {
     padding-inline: 1.5rem
   }
+}
 
-  
+@media (max-width: 768px) {
+  .nav {
+    font-size: 1.125rem;
+    min-width: 100vw;
+    
+  }
+
+  .nav-links a {
+    padding-inline: 1.25rem
+  }
 }
 
 

@@ -1,9 +1,10 @@
 .contact-container {
-    position: relative;
-    height: 100vh;
+    margin: 16rem auto;
+    max-height: 100vh;
+    max-width: 60vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 
 .hidecontact {
@@ -17,44 +18,35 @@
     transition: all 1s;
   }
 
-.contact-img-container {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-}
-
-.contact-img img {
-    width: 60vw;
-    height: 100vh;
-}
-
 .contact-form-header {
+    position: relative;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: underline 4px solid var(--primary-color);
     text-underline-offset: 1rem;
     padding-bottom: 2rem;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    color: white;
-    text-align: center;
+    color: var(--primary-color);
+    
     
     
 }
 
 .contact-form label {
     font-size: 2rem;
-    padding-block: 1rem;
+    padding-block: 0.5rem;
+    
     
 }
 
 .contact-form input[type="text"], input[type="email"] {
-    height: 3rem;
-    font-size: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
     background-color: var(--primary-color1);
     border: none;
     border-bottom: 2px solid white;
@@ -63,10 +55,11 @@
 
 .contact-form input[type="text"]:focus, input[type="email"]:focus {
     outline: none;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .contact-form textarea {
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: var(--primary-color1);
     border: none;
     border: 1px solid rgba(255, 255, 255, 0.164);
@@ -74,7 +67,7 @@
 }
 
 .contact-form textarea:focus {
-    outline: none;
+    outline: 1px solid var(--primary-color);
 }
 
 .submit-btn[type="submit"] {
@@ -100,5 +93,23 @@ input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: var(--white);
     font-family: 'Montserrat Alternates', sans-serif !important;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .contact-container {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 1440px) {
+    .contact-container {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        max-width: 90vw;
+    }
 }
