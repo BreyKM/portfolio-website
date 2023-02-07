@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 function Projects() {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     rootMargin: "75px",
   });
 
@@ -15,7 +15,7 @@ function Projects() {
       <div className="project-header">Projects</div>
       <div className={`project ${inView ? "showproject" : "hideproject"}`} ref={ref}>
         <div className="project-content">
-          <a href="https://breykm.github.io/Etch-A-Sketch/" target="_blank" rel="noreferrer"><h4 className="project-title" aria-label="Etch-A-Sketch site link title">Etch-A-Sketch</h4></a>
+        <h4 className="project-title"><a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank" rel="noreferrer" aria-label="H-B-O Max clone link ">Etch-A-Sketch</a></h4>
           <div className="project-details-container">
           <div className="project-description">
             <p>
@@ -84,25 +84,25 @@ function Projects() {
           </a>
         </div>
       </div>
-      <div className={`project2 ${inView ? "showproject2" : "hideproject2"}`} ref={ref}>
-        <div className="project-content2">
-          <h4 className="project-title2"><a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank" rel="noreferrer" aria-label="H-B-O Max clone link ">HBO MAX clone</a></h4>
-          <div className="project-details-container2">
-          <div className="project-description2">
+      <div className={`project project-flipped ${inView ? "showproject2" : "hideproject2"}`} ref={ref}>
+        <div className="project-content project-content-flipped">
+          <h4 className="project-title"><a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank" rel="noreferrer" aria-label="H-B-O Max clone link ">HBO MAX clone</a></h4>
+          <div className="project-details-container-flipped">
+          <div className="project-description">
             <p>
               This etch-a-sketch website is a fun and interactive digital
               version of the classic toy. Built with JavaScript, it allows users
               to create simple sketches by moving a cursor on a virtual canvas.
             </p>
             </div>
-            <div className="project-tools2">
+            <div className="project-tools project-tools2">
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
             </div>
-            <div className="project-links-svg2">
+            <div className="project-links-svg project-links-svg2">
             <ul className="project-links-right">
               <a href="https://github.com/BreyKM/HBOMAX-clone" target="_blank" rel="noreferrer" aria-label="H-B-0 max git hub link">
                 <svg
@@ -143,7 +143,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="project-img2">
+        <div className="project-img project-img2">
           <a
             href="https://breykm.github.io/HBOMAX-clone/"
             target="_blank" rel="noreferrer"

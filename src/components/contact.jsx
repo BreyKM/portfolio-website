@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { useInView } from "react-intersection-observer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 function Contact() {
   const form = useRef();
@@ -19,13 +22,41 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
+          msgSent();
+          
         },
         (error) => {
           console.log(error.text);
+          msgError();
+          
         }
       );
   };
+
+  const msgSent = () => toast.success('Message Sent!', {
+    position: "top-center",
+    autoClose: 2000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
+
+    const msgError = () => toast.error('Message not sent!', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+
+
+
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -54,8 +85,19 @@ function Contact() {
             placeholder="Lets chat!"
           />
           <input className="submit-btn" type="submit" value="Send" />
+          
         </form>
       </div>
+      <ToastContainer position="top-center"
+autoClose={5000}
+hideProgressBar={true}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss={false}
+draggable
+pauseOnHover
+theme="dark"/>
     </div>
   );
 }

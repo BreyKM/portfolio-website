@@ -8,6 +8,10 @@
   height: 100vh;
 }
 
+.hero-container {
+  max-width: 1024px
+}
+
 .hidehero {
   opacity: 0;
   transform: translateY(100%);
@@ -61,7 +65,7 @@ span {
 }
 
 .resume-btn {
-  width: 12rem;
+  max-width: 12rem;
   padding: 1rem 1rem;
   font-size: 2rem;
   border-radius: 3rem;
@@ -89,6 +93,47 @@ span {
   animation: bounce-in-right 1.5s both;
 }
 
-@media (max-width: 1200px) {
-  
+
+@media (max-width: 1000px) {
+  .hero-container {
+    margin-left: 10vw
+  }
+}
+@media (max-width: 800px) {
+  .hero-container {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .big_heading {
+    font-size: 4rem;
+  }
+
+  .small_heading {
+    font-size:1.5rem;
+  }
+
+  .resume-btn {
+    font-size: 1.5rem
+  }
+}
+
+@media (max-width: 475px) {
+  .big_heading {
+    font-size: 3rem;
+  }
+
+  .small_heading {
+    font-size:1.25rem;
+  }
+
+  .resume-btn {
+    font-size: 1.25rem
+  }
+
+  .hero-padding {
+    padding-bottom: 1rem;
+  }
 }

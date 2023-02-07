@@ -9,6 +9,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import SidebarLinks from "./components/SideBarLinks";
+import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
@@ -88,7 +89,7 @@ function App() {
             },
             number: {
               density: {
-                enable: true,
+                enable: false,
                 area: 800,
               },
               value: 30,
@@ -114,6 +115,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

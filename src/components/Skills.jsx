@@ -2,13 +2,14 @@ import React from "react";
 import "./skills.css";
 import hcj from "./images/HTML_CSS_JS.png";
 import rxt from "./images/React-icon.svg.png";
-import nodejs from "./images/1200px-Node.js_logo.svg.png";
+import nodejs from "./images/nodeJS-logov2.png";
 import python from "./images/python-logo.png";
 import { useInView } from "react-intersection-observer";
 
 function Skills() {
   const { ref, inView } = useInView({
     triggerOnce: false,
+    rootMargin: "250px",
   });
 
   return (
@@ -19,7 +20,7 @@ function Skills() {
           <div className={`card ${inView ? "show" : "hidden"}`} ref={ref}>
             <div className="card-content">
               <div className="card-image">
-                <img src={hcj} alt="html css and javascript logos" />
+                <img className="skills-img" src={hcj} alt="html css and javascript logos" />
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">
@@ -31,7 +32,7 @@ function Skills() {
           <div className={`card ${inView ? "show" : "hidden"}`} ref={ref}>
             <div className="card-content">
               <div className="card-image">
-                <img src={rxt} alt="" />
+                <img className="skills-img" src={rxt} alt="" />
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">
@@ -43,7 +44,7 @@ function Skills() {
           <div className={`card ${inView ? "show" : "hidden"}`} ref={ref}>
             <div className="card-content">
               <div className="card-image">
-                <img src={python} alt="" />
+                <img className="skills-img" src={python} alt="" />
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">
@@ -55,7 +56,7 @@ function Skills() {
           <div className={`card ${inView ? "show" : "hidden"}`} ref={ref}>
             <div className="card-content">
               <div className="card-image">
-                <img src={nodejs} alt="" />
+                <img className="node-img" src={nodejs} alt="" />
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">
