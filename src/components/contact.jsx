@@ -1,10 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { useInView } from "react-intersection-observer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 
 function Contact() {
   const form = useRef();
@@ -23,40 +22,38 @@ function Contact() {
         (result) => {
           console.log(result.text);
           msgSent();
-          
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
           msgError();
-          
         }
       );
   };
 
-  const msgSent = () => toast.success('Message Sent!', {
-    position: "top-center",
-    autoClose: 2000,
-    hideProgressBar: true,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "dark",
-    });
-
-    const msgError = () => toast.error('Message not sent!', {
+  const msgSent = () =>
+    toast.success("Message Sent!", {
       position: "top-center",
       autoClose: 2000,
-      hideProgressBar: true,
+      hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
       theme: "dark",
-      });
+    });
 
-
-
+  const msgError = () =>
+    toast.error("Message not sent!", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -71,13 +68,19 @@ function Contact() {
         ref={ref}
       >
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
-          <label htmlFor="user_name" title="required">Name</label>
+          <label htmlFor="user_name" title="required">
+            Name
+          </label>
           <input type="text" name="user_name" placeholder="Your name" />
-          <label  htmlFor="user_email" title="required">Email</label>
+          <label htmlFor="user_email" title="required">
+            Email
+          </label>
           <input type="email" name="user_email" placeholder="your email" />
-          <label  htmlFor="user_subject">Subject</label>
+          <label htmlFor="user_subject">Subject</label>
           <input type="text" name="user_subject" placeholder="optional" />
-          <label htmlFor="message" title="required">Message</label>
+          <label htmlFor="message" title="required">
+            Message
+          </label>
           <textarea
             name="message"
             rows={8}
@@ -85,19 +88,20 @@ function Contact() {
             placeholder="Lets chat!"
           />
           <input className="submit-btn" type="submit" value="Send" />
-          
         </form>
       </div>
-      <ToastContainer position="top-center"
-autoClose={5000}
-hideProgressBar={true}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss={false}
-draggable
-pauseOnHover
-theme="dark"/>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover={false}
+        theme="dark"
+      />
     </div>
   );
 }
