@@ -108,7 +108,7 @@ input:-webkit-autofill:active {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .contact-container {
         max-width: 90vw;
     }
